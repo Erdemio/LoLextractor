@@ -45,10 +45,12 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog4 = new System.Windows.Forms.OpenFileDialog();
             this.btnVoiceExtract = new System.Windows.Forms.Button();
-            this.btnRemove2 = new System.Windows.Forms.Button();
+            this.btnRemove1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.btnRemove2 = new System.Windows.Forms.Button();
+            this.btnRemove3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,9 +65,9 @@
             // 
             // btnPath
             // 
-            this.btnPath.Location = new System.Drawing.Point(543, 28);
+            this.btnPath.Location = new System.Drawing.Point(15, 90);
             this.btnPath.Name = "btnPath";
-            this.btnPath.Size = new System.Drawing.Size(118, 23);
+            this.btnPath.Size = new System.Drawing.Size(90, 30);
             this.btnPath.TabIndex = 1;
             this.btnPath.Text = "1- Wad Select";
             this.btnPath.UseVisualStyleBackColor = true;
@@ -73,9 +75,9 @@
             // 
             // btnExtract
             // 
-            this.btnExtract.Location = new System.Drawing.Point(667, 28);
+            this.btnExtract.Location = new System.Drawing.Point(15, 126);
             this.btnExtract.Name = "btnExtract";
-            this.btnExtract.Size = new System.Drawing.Size(118, 23);
+            this.btnExtract.Size = new System.Drawing.Size(124, 30);
             this.btnExtract.TabIndex = 2;
             this.btnExtract.Text = "2- Extract";
             this.btnExtract.UseVisualStyleBackColor = true;
@@ -85,9 +87,9 @@
             // 
             this.listBox1.AllowDrop = true;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 83);
+            this.listBox1.Location = new System.Drawing.Point(145, 90);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(745, 95);
+            this.listBox1.Size = new System.Drawing.Size(700, 69);
             this.listBox1.TabIndex = 3;
             this.listBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox1_DragDrop);
             this.listBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox1_DragEnter);
@@ -102,9 +104,9 @@
             // 
             // btnRemoveItem
             // 
-            this.btnRemoveItem.Location = new System.Drawing.Point(763, 83);
+            this.btnRemoveItem.Location = new System.Drawing.Point(111, 90);
             this.btnRemoveItem.Name = "btnRemoveItem";
-            this.btnRemoveItem.Size = new System.Drawing.Size(22, 23);
+            this.btnRemoveItem.Size = new System.Drawing.Size(28, 30);
             this.btnRemoveItem.TabIndex = 4;
             this.btnRemoveItem.Text = "-";
             this.btnRemoveItem.UseVisualStyleBackColor = true;
@@ -115,9 +117,9 @@
             this.listBox2.AllowDrop = true;
             this.listBox2.DisplayMember = "Bin";
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(12, 222);
+            this.listBox2.Location = new System.Drawing.Point(145, 162);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(745, 30);
+            this.listBox2.Size = new System.Drawing.Size(700, 30);
             this.listBox2.TabIndex = 5;
             this.listBox2.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox2_DragDrop);
             this.listBox2.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox2_DragEnter);
@@ -126,9 +128,9 @@
             // 
             this.listBox3.AllowDrop = true;
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(12, 258);
+            this.listBox3.Location = new System.Drawing.Point(145, 198);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(745, 30);
+            this.listBox3.Size = new System.Drawing.Size(700, 30);
             this.listBox3.TabIndex = 6;
             this.listBox3.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox3_DragDrop);
             this.listBox3.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox3_DragEnter);
@@ -137,18 +139,18 @@
             // 
             this.listBox4.AllowDrop = true;
             this.listBox4.FormattingEnabled = true;
-            this.listBox4.Location = new System.Drawing.Point(12, 294);
+            this.listBox4.Location = new System.Drawing.Point(145, 234);
             this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(745, 30);
+            this.listBox4.Size = new System.Drawing.Size(700, 30);
             this.listBox4.TabIndex = 7;
             this.listBox4.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox4_DragDrop);
             this.listBox4.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox4_DragEnter);
             // 
             // btnBinSelect
             // 
-            this.btnBinSelect.Location = new System.Drawing.Point(12, 193);
+            this.btnBinSelect.Location = new System.Drawing.Point(15, 162);
             this.btnBinSelect.Name = "btnBinSelect";
-            this.btnBinSelect.Size = new System.Drawing.Size(118, 23);
+            this.btnBinSelect.Size = new System.Drawing.Size(90, 30);
             this.btnBinSelect.TabIndex = 8;
             this.btnBinSelect.Text = "3- Bin Select";
             this.btnBinSelect.UseVisualStyleBackColor = true;
@@ -156,9 +158,9 @@
             // 
             // btnBnkSelect
             // 
-            this.btnBnkSelect.Location = new System.Drawing.Point(136, 193);
+            this.btnBnkSelect.Location = new System.Drawing.Point(15, 198);
             this.btnBnkSelect.Name = "btnBnkSelect";
-            this.btnBnkSelect.Size = new System.Drawing.Size(118, 23);
+            this.btnBnkSelect.Size = new System.Drawing.Size(90, 30);
             this.btnBnkSelect.TabIndex = 9;
             this.btnBnkSelect.Text = "4- BNK Select";
             this.btnBnkSelect.UseVisualStyleBackColor = true;
@@ -166,9 +168,9 @@
             // 
             // btnWpkSelect
             // 
-            this.btnWpkSelect.Location = new System.Drawing.Point(260, 193);
+            this.btnWpkSelect.Location = new System.Drawing.Point(15, 234);
             this.btnWpkSelect.Name = "btnWpkSelect";
-            this.btnWpkSelect.Size = new System.Drawing.Size(118, 23);
+            this.btnWpkSelect.Size = new System.Drawing.Size(90, 30);
             this.btnWpkSelect.TabIndex = 10;
             this.btnWpkSelect.Text = "5- WPK Select";
             this.btnWpkSelect.UseVisualStyleBackColor = true;
@@ -194,23 +196,23 @@
             // 
             // btnVoiceExtract
             // 
-            this.btnVoiceExtract.Location = new System.Drawing.Point(384, 193);
+            this.btnVoiceExtract.Location = new System.Drawing.Point(15, 270);
             this.btnVoiceExtract.Name = "btnVoiceExtract";
-            this.btnVoiceExtract.Size = new System.Drawing.Size(118, 23);
+            this.btnVoiceExtract.Size = new System.Drawing.Size(124, 30);
             this.btnVoiceExtract.TabIndex = 11;
             this.btnVoiceExtract.Text = "6- Voice Extract";
             this.btnVoiceExtract.UseVisualStyleBackColor = true;
             this.btnVoiceExtract.Click += new System.EventHandler(this.btnVoiceExtract_Click);
             // 
-            // btnRemove2
+            // btnRemove1
             // 
-            this.btnRemove2.Location = new System.Drawing.Point(763, 222);
-            this.btnRemove2.Name = "btnRemove2";
-            this.btnRemove2.Size = new System.Drawing.Size(25, 102);
-            this.btnRemove2.TabIndex = 12;
-            this.btnRemove2.Text = "-";
-            this.btnRemove2.UseVisualStyleBackColor = true;
-            this.btnRemove2.Click += new System.EventHandler(this.btnRemove2_Click);
+            this.btnRemove1.Location = new System.Drawing.Point(111, 162);
+            this.btnRemove1.Name = "btnRemove1";
+            this.btnRemove1.Size = new System.Drawing.Size(28, 30);
+            this.btnRemove1.TabIndex = 12;
+            this.btnRemove1.Text = "-";
+            this.btnRemove1.UseVisualStyleBackColor = true;
+            this.btnRemove1.Click += new System.EventHandler(this.btnRemove1_Click);
             // 
             // pictureBox1
             // 
@@ -244,15 +246,37 @@
             this.linkLabel2.Text = "erdem.in";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // btnRemove2
+            // 
+            this.btnRemove2.Location = new System.Drawing.Point(111, 198);
+            this.btnRemove2.Name = "btnRemove2";
+            this.btnRemove2.Size = new System.Drawing.Size(28, 30);
+            this.btnRemove2.TabIndex = 16;
+            this.btnRemove2.Text = "-";
+            this.btnRemove2.UseVisualStyleBackColor = true;
+            this.btnRemove2.Click += new System.EventHandler(this.btnRemove2_Click);
+            // 
+            // btnRemove3
+            // 
+            this.btnRemove3.Location = new System.Drawing.Point(111, 234);
+            this.btnRemove3.Name = "btnRemove3";
+            this.btnRemove3.Size = new System.Drawing.Size(28, 30);
+            this.btnRemove3.TabIndex = 17;
+            this.btnRemove3.Text = "-";
+            this.btnRemove3.UseVisualStyleBackColor = true;
+            this.btnRemove3.Click += new System.EventHandler(this.btnRemove3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 338);
+            this.ClientSize = new System.Drawing.Size(869, 311);
+            this.Controls.Add(this.btnRemove3);
+            this.Controls.Add(this.btnRemove2);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnRemove2);
+            this.Controls.Add(this.btnRemove1);
             this.Controls.Add(this.btnVoiceExtract);
             this.Controls.Add(this.btnWpkSelect);
             this.Controls.Add(this.btnBnkSelect);
@@ -267,8 +291,6 @@
             this.Controls.Add(this.lblPath);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(816, 377);
-            this.MinimumSize = new System.Drawing.Size(816, 377);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PBETR Extractor v7.0- By Erdem (IO) & Eren (Js)";
@@ -296,10 +318,12 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog3;
         private System.Windows.Forms.OpenFileDialog openFileDialog4;
         private System.Windows.Forms.Button btnVoiceExtract;
-        private System.Windows.Forms.Button btnRemove2;
+        private System.Windows.Forms.Button btnRemove1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Button btnRemove2;
+        private System.Windows.Forms.Button btnRemove3;
     }
 }
 

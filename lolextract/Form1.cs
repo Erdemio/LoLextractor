@@ -45,13 +45,17 @@ namespace lolextract
 
         private void btnExtract_Click_1(object sender, EventArgs e)
         {
-            foreach (string paths in listBox1.Items)
+             if(listBox1.Items.Count>0)
             {
-               Process cmd = Process.Start("cmd.exe", string.Format("/c python -m cdragontoolbox wad-extract \"{0}", paths));
-            }
-            listBox1.Items.Clear();
+                foreach (string paths in listBox1.Items)
+                {
+                    Process cmd = Process.Start("cmd.exe", string.Format("/c python -m cdragontoolbox wad-extract \"{0}", paths));
+                }
+                listBox1.Items.Clear();
 
-            MessageBox.Show("All done.", "", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+                MessageBox.Show("All done.", "", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+            }
+            
         }
 
         private void btnRemoveItem_Click(object sender, EventArgs e)
@@ -121,6 +125,9 @@ namespace lolextract
         }
 
         private void btnVoiceExtract_Click(object sender, EventArgs e) {
+            
+            
+            
             string binAdress = listBox2.Items[0].ToString(); 
             string bnkAdress = listBox3.Items[0].ToString();
             string wpkAdress = listBox4.Items[0].ToString();
@@ -131,11 +138,7 @@ namespace lolextract
             MessageBox.Show("All done.", "", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
         }
 
-        private void btnRemove2_Click(object sender, EventArgs e) {
-            listBox2.Items.Clear();
-            listBox3.Items.Clear();
-            listBox4.Items.Clear();
-        }
+        
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
             System.Diagnostics.Process.Start("https://youtube.com/PBETR");
@@ -241,6 +244,23 @@ namespace lolextract
         private void listBox4_DragDrop(object sender, DragEventArgs e) {
             string[] filePath = (string[])e.Data.GetData(DataFormats.FileDrop, false);
             listBox4.Items.Add(filePath[0]);
+        }
+       
+        private void btnRemove1_Click(object sender, EventArgs e)
+        {
+            if (listBox2.Items.Count > 0)
+                listBox2.Items.Clear();
+        }
+
+        private void btnRemove2_Click(object sender, EventArgs e)
+        {
+            if (listBox3.Items.Count > 0)
+                listBox3.Items.Clear();
+        }
+        private void btnRemove3_Click(object sender, EventArgs e)
+        {
+            if (listBox4.Items.Count > 0)
+                listBox4.Items.Clear();
         }
     }
 }
